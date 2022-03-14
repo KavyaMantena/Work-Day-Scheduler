@@ -10,7 +10,7 @@ A website built to schedule a organized work-day activities.
 * Javascript
 
 ## WeBsite 
-
+https://kavyamantena.github.io/Work-Day-Scheduler/
 
 
 ## Contribution
