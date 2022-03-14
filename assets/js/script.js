@@ -4,7 +4,13 @@ let currentHour = moment().hour();
 currentDay.textContent = currentTime.format("dddd, MMMM, Do,");
 
 let inputELS = document.querySelectorAll("input");
-let todos = JSON.parse(localStorage.getItem("todos"));
+let todos;
+if (localStorage.getItem("todos") == null) {
+  todos = {};
+} else {
+  todos = JSON.parse(localStorage.getItem("todos"));
+}
+
 console.log(todos);
 for (i = 0; i < inputELS.length; i++) {
   let inputEl = inputELS[i];
